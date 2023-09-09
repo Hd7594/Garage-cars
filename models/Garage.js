@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/Garage");
+mongoose.connect(process.env.MONGODB_URI);
 
 const Garage = mongoose.model("Garage-One", {
   Capacities: {
